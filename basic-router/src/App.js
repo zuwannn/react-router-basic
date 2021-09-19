@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import './index.css';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom'
 
 export default function App(){
   const name = 'Zuwannn'
@@ -44,6 +44,7 @@ const Home = () => (
 const About = ({match:{params:{name}}}) => (
   // props.match.params.name
   <Fragment>
+    {name !== 'Zuwannn' ? <Redirect to="/" /> :null  }
     <h1>About {name}</h1>
     <FakeText />
   </Fragment>
