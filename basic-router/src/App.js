@@ -50,9 +50,12 @@ const About = ({match:{params:{name}}}) => (
 )
   
 // Contact Page
-const Contact = () => (
+const Contact = ({history}) => (
   <Fragment>
     <h1>Contact</h1>
+    <button onClick={() => history.push('/')}>
+      Go to home
+    </button>
     <FakeText />
   </Fragment>
 )
