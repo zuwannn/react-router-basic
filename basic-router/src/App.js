@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import './index.css';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 export default function App(){
   return(
@@ -13,6 +13,7 @@ export default function App(){
             <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
+        <Route path="/" component={Home}/>
       </main>
     </Router>
     
