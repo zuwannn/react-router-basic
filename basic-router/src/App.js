@@ -35,7 +35,7 @@ const FakeText = () => (
 
 // Home Page
 const Home = () => (
-  <Fragment>
+  <Fragment >
     <h1>Home</h1>
     <FakeText />
   </Fragment>
@@ -55,7 +55,7 @@ const About = ({match:{params:{name}}}) => (
 const Contact = ({history}) => (
   <Fragment>
     <h1>Contact</h1>
-    <button onClick={() => history.push('/')}>
+    <button class="waves-effect waves-light btn-small " onClick={() => history.push('/')} >
       Go to home
     </button>
     <FakeText />
